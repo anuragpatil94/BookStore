@@ -33,7 +33,7 @@ public class Login extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "odysseys");
+            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "root");
             ps = conn.prepareStatement(sql);
             ps.setString(1, username);
             ps.setString(2, password);

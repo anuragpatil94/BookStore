@@ -30,7 +30,7 @@ public class addbook extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = (Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "odysseys");
+            conn = (Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "root");
             ps = (PreparedStatement) conn.prepareStatement("insert into books (b_name,author,genre,price) values "
                     + "('" + b_name + "','" + author + "','" + genre + "','" + price + "')");
             int i = ps.executeUpdate();

@@ -32,7 +32,7 @@ public class DisplayData extends HttpServlet {
                 try{
             PrintWriter out=response.getWriter();
              Class.forName("com.mysql.jdbc.Driver");
-            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "odysseys");
+            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "root");
             st=conn.createStatement();
                 query="select * from books";
                 rs=st.executeQuery(query);

@@ -40,7 +40,7 @@ public class Registration extends HttpServlet {
         PreparedStatement ps = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = (Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "odysseys");
+            conn = (Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "root");
             ps = (PreparedStatement) conn.prepareStatement("insert into customers values(?,?,?,?,?,?,?,?,?,?)");
 
             ps.setString(1, username);

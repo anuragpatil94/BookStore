@@ -38,7 +38,7 @@ public class UpdateData extends HttpServlet {
             System.out.println("" + bname);
             Class.forName("com.mysql.jdbc.Driver");
 
-            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "odysseys");
+            conn = (com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql:///bookstore", "root", "root");
 
             query = "update books set b_name='" + bname + "',author='" + author + "',genre='" + genre + "',price='" + price + "' where b_id='" + id + "'";
             ps = (PreparedStatement) conn.prepareStatement(query);
