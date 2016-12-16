@@ -1,0 +1,579 @@
+body{
+    background-image:url('images/backb2.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+/*DISPLAY RECORD*/
+table{
+    border:3px ;
+    border-style: outset;
+    border-color:whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.dr-input{
+    background:#90c843;
+    height:40px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+    border:rgba(0,0,0,.3) 0px solid;
+    box-sizing:border-box;
+    padding:10px;
+    color:#FFF;
+    font-weight:bold;
+    font-size: 12pt;
+    transition:background .4s;
+    cursor:pointer;
+}
+.dr-input:hover{
+    background:#80b438;
+}
+
+
+
+th, td{
+    color: #fff;
+    border:1px ;
+    border-style: outset;
+    border-color:whitesmoke;
+    width:15%;
+
+}
+.dr-box{
+    background-color: black;
+    opacity:0.75;/* I added this*/
+    padding: 20px;
+    width: 80%;
+    /*to make box in center*/
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:2%;
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+    max-height:720px;
+    height:1%;
+
+    text-align: center;
+}
+/*display record END*/
+
+
+
+
+/* biggest container */
+.wrapper{
+   
+    
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+
+    padding-bottom:9%;
+    padding-top:5%;
+}
+
+/* nav bar start */
+#cssmenu {
+
+    background: #1e1e65;
+    padding: 5px;
+    width: 70%;
+    max-height: 50px;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+    margin-bottom:5%;
+}
+#cssmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+}
+#cssmenu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+
+}
+#cssmenu ul li {
+    display: inline-block;
+    padding: 0;
+    margin-left: 2%;
+    margin-right:2%;
+
+}
+#cssmenu.align-right ul li {
+    float: right;
+}
+#cssmenu.align-center ul {
+    text-align: center;
+}
+#cssmenu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14pt;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+#cssmenu ul li a:hover {
+    color: grey;
+}
+#cssmenu ul li a:hover:before {
+    width: 100%;
+}
+#cssmenu ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 19px;
+    height: 6px;
+    width: 6px;
+    background: black;
+    opacity: .5;
+
+
+}
+#cssmenu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background:white;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -ms-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+    display: none;
+}
+#cssmenu ul li.active a {
+    color: white;
+}
+#cssmenu ul li.active a:before {
+    width: 100%;
+}
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+    display: block;
+}
+#cssmenu.align-right li:first-child a:after {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #cssmenu ul li {
+        float: none;
+        display: block;
+    }
+    #cssmenu ul li a {
+        width: 100%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid white;
+    }
+    #cssmenu ul li.last > a,
+    #cssmenu ul li:last-child > a {
+        border: 0;
+    }
+    #cssmenu ul li a:after {
+        display: none;
+
+    }
+    #cssmenu ul li a:before {
+        display: none;
+    }
+}
+/* nav bar end */
+
+
+
+
+/* internal box*/
+.box {
+    background-color: black;
+    opacity:0.75;/* I added this*/
+    padding: 20px;
+    width: 50%;
+    /*to make box in center*/
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:5%;
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+    height: 250px;
+    text-align: center;
+
+}
+
+/*register page box*/
+.boxreg{
+    background-color: black;
+    opacity:0.75;/* I added this*/
+    padding: 20px;
+    width: 50%;
+    /*to make box in center*/
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:2%;
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+    max-height:720px;
+    height:1%;
+
+    text-align: center;
+}
+h1 {
+    color: white;
+    font-family: Times New Roman;
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0px;
+}
+p {
+    color: white;
+    font-family: 'lucida bright',lucida;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+/* Watever styling u want to do do it here?? below this  */
+/* login register  h4 */
+.form h4{
+    color:white;
+}
+/*text box*/
+
+.textbox{
+    height:30px;
+    width:100%;
+    border-radius:3px;
+    border:rgba(0,0,0,.3) 2px solid;
+    box-sizing:border-box;
+    padding:10px;
+
+    margin-bottom:5%;
+}
+.textbox:focus{
+    outline:none;
+    border:rgba(24,149,215,1) 2px solid;
+    color:rgba(24,149,215,1);
+}
+
+/*text box end*/
+/*Buttons*/
+.button{
+
+    height:50px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+    border:rgba(0,0,0,.3) 0px solid;
+    box-sizing:border-box;
+    padding:10px;
+    margin-bottom:30px;
+    background:#90c843;
+    color:#FFF;
+    font-weight:bold;
+    font-size: 12pt;
+    transition:background .4s;
+    cursor:pointer;
+}
+.button:hover{
+    background:#80b438;
+}
+/*buttons end*/
+
+
+
+
+
+
+
+
+.first ul img{
+
+    margin-left: 100px;
+}
+#first {
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+
+}
+#sec{
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+
+
+}
+#third{
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+
+
+}
+#four{
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+
+
+}
+#five{
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+
+
+}
+#first ul
+{
+    list-style: none;
+}
+#first #img1{
+    margin: 50px 500px 200px 20px;   
+}
+#first #img2{
+    margin: -500px 300px 800px 260px;
+}
+#first #img3 {
+    margin: -1100px 200px 1500px 500px;
+}
+#first #img3-4 {
+    margin: -1800px 50px 1500px 740px;
+}
+
+#sec #img4{
+    margin: 50px 500px 200px 20px;   
+}
+#sec #img5{
+    margin: -500px 300px 800px 260px;
+}
+#sec #img6 {
+    margin: -1100px 200px 1500px 500px;
+}
+#sec #img6-7 {
+    margin: -1800px 50px 1500px 740px;
+}
+
+#third #img7{
+    margin: 50px 500px 200px 20px;   
+}
+#third #img8{
+    margin: -500px 300px 800px 260px;
+}
+#third #img9 {
+    margin: -1100px 200px 1500px 500px;
+}
+#third #img9-8 {
+    margin: -1800px 50px 1500px 740px;
+}
+
+#four #img10{
+    margin: 50px 500px 200px 20px;   
+}
+#four #img11{
+    margin: -500px 300px 800px 260px;
+}
+#four #img12 {
+    margin: -1100px 200px 1500px 500px;
+}
+#four #img12-11 {
+    margin: -1800px 50px 1500px 740px;
+}
+
+#five #img13{
+    margin: 50px 500px 200px 20px;   
+}
+#five #img14{
+    margin: -500px 300px 800px 260px;
+}
+#five #img15 {
+    margin: -1100px 200px 1500px 500px;
+}
+#five #img15-16 {
+    margin: -1800px 50px 1500px 740px;
+}
+.books h1{
+    font-family: "Brush Script MT";
+    font-size: 45px;
+    color: white;
+    margin-left: auto;
+    position: relative;
+    background-color: orange;
+    width:100%;
+    height:53px;
+    text-align: center;
+    animation:thone 15s linear infinite alternate running;
+}
+@keyframes thone {
+    0% { background-color:darkred ;}
+    15% { background-color:brown;}
+    25% { background-color:darkgoldenrod;}
+    35% { background-color:darkorange;}
+    45% { background-color:orangered;}
+    60%{background-color: chocolate}
+    70% { background-color: goldenrod;}
+    85% { background-color: orange;}
+    100% { background-color:orangered;}
+}
+.books{
+    margin-top: 60px;
+}
+
+.select h1{
+    font-family:  "Brush Script MT";
+    font-size: 65px;
+    color: black;
+    width:50%;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+}
+button{
+    font-family: "Brush Script MT";
+    width: 150px;
+    height: 35px;
+    margin-left: -180px;
+    margin-top: 360px;
+    font-size: 25px;
+    color: white;
+    background-color: #990000;
+    border-radius: 5px;
+    border: 0px groove;
+    box-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+    transition: all .1s linear;
+    position:absolute;
+}
+
+button:active {
+
+    transform: translateY(3px);
+    position: absolute;
+}
+h5{
+    position:absolute;
+    margin-top:15px;
+    margin-left:60px;
+    color: black;
+    font-size: 30px;
+    font-family: "Brush Script MT";
+}
+
+
+//About Us
+.about h1{
+    font-size:45px;
+    font-family:"Brush Script MT";
+    color:white;
+    background-color: orange;
+    width:100%;
+    //  height:53px;
+    text-align:center;
+    animation:hello 15s linear infinite alternate running;
+}
+@keyframes hello {
+    0% { background-color:darkred ;}
+    15% { background-color:brown;}
+    25% { background-color:darkgoldenrod;}
+    35% { background-color:darkorange;}
+    45% { background-color:orangered;}
+    60%{background-color: chocolate}
+    70% { background-color: goldenrod;}
+    85% { background-color: orange;}
+    100% { background-color:orangered;}
+}
+
+.about p{
+    font-size:35px;
+    font-family:"Brush Script MT";
+    color:white;
+    width:800px;
+    //  margin-left:450px;
+    font-weight: bold;
+}
+.name{
+
+
+
+
+
+    background-color: black;
+    opacity:0.6;
+    padding: 20px;
+    width: 70%;
+    /*to make box in center*/
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:5%;
+    box-shadow: 0 0 10px 10px rgba(10,10,10,0.6);
+
+    text-align: center;
+}	
+
+#pri {
+    font-size:28px;
+    font-family:"Brush Script MT";
+    //  margin-top:60px;
+    display:inline;
+    color:white;
+}
+
+#anu {
+    font-size:28px;
+    display:inline;
+    font-family:"Brush Script MT";
+    /*    margin-left:580px;
+        margin-top:-145px;*/
+    color:white;
+}
+#aboutus-ul{
+
+    list-style: none;
+    // margin-top:-10px;
+    //  position:absolute;
+    // margin-left:-220px;
+}
+
+
+//EDIT PAGE
+
+#displayrecords .textbox{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#displayrecords .button{
+    width: 50%;
+}
+
